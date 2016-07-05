@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A937DE11D2B530C002F3C91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A937DE01D2B530C002F3C91 /* main.m */; };
+		3A937DE41D2B530C002F3C91 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A937DE31D2B530C002F3C91 /* AppDelegate.m */; };
+		3A937DE71D2B530C002F3C91 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A937DE61D2B530C002F3C91 /* ViewController.m */; };
+		3A937DEA1D2B530C002F3C91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A937DE81D2B530C002F3C91 /* Main.storyboard */; };
+		3A937DEC1D2B530C002F3C91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A937DEB1D2B530C002F3C91 /* Assets.xcassets */; };
+		3A937DEF1D2B530C002F3C91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A937DED1D2B530C002F3C91 /* LaunchScreen.storyboard */; };
+		3A937DFA1D2B530C002F3C91 /* GymojiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A937DF91D2B530C002F3C91 /* GymojiTests.m */; };
+		3A937E051D2B530C002F3C91 /* GymojiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A937E041D2B530C002F3C91 /* GymojiUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A937DF61D2B530C002F3C91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A937DD41D2B530B002F3C91 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A937DDB1D2B530B002F3C91;
+			remoteInfo = Gymoji;
+		};
+		3A937E011D2B530C002F3C91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A937DD41D2B530B002F3C91 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A937DDB1D2B530B002F3C91;
+			remoteInfo = Gymoji;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A937DDC1D2B530B002F3C91 /* Gymoji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gymoji.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A937DE01D2B530C002F3C91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3A937DE21D2B530C002F3C91 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3A937DE31D2B530C002F3C91 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3A937DE51D2B530C002F3C91 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3A937DE61D2B530C002F3C91 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3A937DE91D2B530C002F3C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A937DEB1D2B530C002F3C91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A937DEE1D2B530C002F3C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A937DF01D2B530C002F3C91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A937DF51D2B530C002F3C91 /* GymojiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymojiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A937DF91D2B530C002F3C91 /* GymojiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GymojiTests.m; sourceTree = "<group>"; };
+		3A937DFB1D2B530C002F3C91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A937E001D2B530C002F3C91 /* GymojiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymojiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A937E041D2B530C002F3C91 /* GymojiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GymojiUITests.m; sourceTree = "<group>"; };
+		3A937E061D2B530C002F3C91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A937DD91D2B530B002F3C91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A937DF21D2B530C002F3C91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A937DFD1D2B530C002F3C91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A937DD31D2B530B002F3C91 = {
+			isa = PBXGroup;
+			children = (
+				3A937DDE1D2B530B002F3C91 /* Gymoji */,
+				3A937DF81D2B530C002F3C91 /* GymojiTests */,
+				3A937E031D2B530C002F3C91 /* GymojiUITests */,
+				3A937DDD1D2B530B002F3C91 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A937DDD1D2B530B002F3C91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A937DDC1D2B530B002F3C91 /* Gymoji.app */,
+				3A937DF51D2B530C002F3C91 /* GymojiTests.xctest */,
+				3A937E001D2B530C002F3C91 /* GymojiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A937DDE1D2B530B002F3C91 /* Gymoji */ = {
+			isa = PBXGroup;
+			children = (
+				3A937DE21D2B530C002F3C91 /* AppDelegate.h */,
+				3A937DE31D2B530C002F3C91 /* AppDelegate.m */,
+				3A937DE51D2B530C002F3C91 /* ViewController.h */,
+				3A937DE61D2B530C002F3C91 /* ViewController.m */,
+				3A937DE81D2B530C002F3C91 /* Main.storyboard */,
+				3A937DEB1D2B530C002F3C91 /* Assets.xcassets */,
+				3A937DED1D2B530C002F3C91 /* LaunchScreen.storyboard */,
+				3A937DF01D2B530C002F3C91 /* Info.plist */,
+				3A937DDF1D2B530C002F3C91 /* Supporting Files */,
+			);
+			path = Gymoji;
+			sourceTree = "<group>";
+		};
+		3A937DDF1D2B530C002F3C91 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A937DE01D2B530C002F3C91 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A937DF81D2B530C002F3C91 /* GymojiTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A937DF91D2B530C002F3C91 /* GymojiTests.m */,
+				3A937DFB1D2B530C002F3C91 /* Info.plist */,
+			);
+			path = GymojiTests;
+			sourceTree = "<group>";
+		};
+		3A937E031D2B530C002F3C91 /* GymojiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3A937E041D2B530C002F3C91 /* GymojiUITests.m */,
+				3A937E061D2B530C002F3C91 /* Info.plist */,
+			);
+			path = GymojiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A937DDB1D2B530B002F3C91 /* Gymoji */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A937E091D2B530C002F3C91 /* Build configuration list for PBXNativeTarget "Gymoji" */;
+			buildPhases = (
+				3A937DD81D2B530B002F3C91 /* Sources */,
+				3A937DD91D2B530B002F3C91 /* Frameworks */,
+				3A937DDA1D2B530B002F3C91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Gymoji;
+			productName = Gymoji;
+			productReference = 3A937DDC1D2B530B002F3C91 /* Gymoji.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A937DF41D2B530C002F3C91 /* GymojiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A937E0C1D2B530C002F3C91 /* Build configuration list for PBXNativeTarget "GymojiTests" */;
+			buildPhases = (
+				3A937DF11D2B530C002F3C91 /* Sources */,
+				3A937DF21D2B530C002F3C91 /* Frameworks */,
+				3A937DF31D2B530C002F3C91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A937DF71D2B530C002F3C91 /* PBXTargetDependency */,
+			);
+			name = GymojiTests;
+			productName = GymojiTests;
+			productReference = 3A937DF51D2B530C002F3C91 /* GymojiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3A937DFF1D2B530C002F3C91 /* GymojiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A937E0F1D2B530C002F3C91 /* Build configuration list for PBXNativeTarget "GymojiUITests" */;
+			buildPhases = (
+				3A937DFC1D2B530C002F3C91 /* Sources */,
+				3A937DFD1D2B530C002F3C91 /* Frameworks */,
+				3A937DFE1D2B530C002F3C91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A937E021D2B530C002F3C91 /* PBXTargetDependency */,
+			);
+			name = GymojiUITests;
+			productName = GymojiUITests;
+			productReference = 3A937E001D2B530C002F3C91 /* GymojiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A937DD41D2B530B002F3C91 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = bodytech;
+				TargetAttributes = {
+					3A937DDB1D2B530B002F3C91 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					3A937DF41D2B530C002F3C91 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 3A937DDB1D2B530B002F3C91;
+					};
+					3A937DFF1D2B530C002F3C91 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 3A937DDB1D2B530B002F3C91;
+					};
+				};
+			};
+			buildConfigurationList = 3A937DD71D2B530B002F3C91 /* Build configuration list for PBXProject "Gymoji" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A937DD31D2B530B002F3C91;
+			productRefGroup = 3A937DDD1D2B530B002F3C91 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A937DDB1D2B530B002F3C91 /* Gymoji */,
+				3A937DF41D2B530C002F3C91 /* GymojiTests */,
+				3A937DFF1D2B530C002F3C91 /* GymojiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A937DDA1D2B530B002F3C91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A937DEF1D2B530C002F3C91 /* LaunchScreen.storyboard in Resources */,
+				3A937DEC1D2B530C002F3C91 /* Assets.xcassets in Resources */,
+				3A937DEA1D2B530C002F3C91 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A937DF31D2B530C002F3C91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A937DFE1D2B530C002F3C91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A937DD81D2B530B002F3C91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A937DE71D2B530C002F3C91 /* ViewController.m in Sources */,
+				3A937DE41D2B530C002F3C91 /* AppDelegate.m in Sources */,
+				3A937DE11D2B530C002F3C91 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A937DF11D2B530C002F3C91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A937DFA1D2B530C002F3C91 /* GymojiTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A937DFC1D2B530C002F3C91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A937E051D2B530C002F3C91 /* GymojiUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A937DF71D2B530C002F3C91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A937DDB1D2B530B002F3C91 /* Gymoji */;
+			targetProxy = 3A937DF61D2B530C002F3C91 /* PBXContainerItemProxy */;
+		};
+		3A937E021D2B530C002F3C91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A937DDB1D2B530B002F3C91 /* Gymoji */;
+			targetProxy = 3A937E011D2B530C002F3C91 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3A937DE81D2B530C002F3C91 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A937DE91D2B530C002F3C91 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A937DED1D2B530C002F3C91 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A937DEE1D2B530C002F3C91 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A937E071D2B530C002F3C91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A937E081D2B530C002F3C91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A937E0A1D2B530C002F3C91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Gymoji/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.bodytech.gymoji.Gymoji;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3A937E0B1D2B530C002F3C91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Gymoji/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.bodytech.gymoji.Gymoji;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3A937E0D1D2B530C002F3C91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GymojiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.bodytech.gymoji.GymojiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gymoji.app/Gymoji";
+			};
+			name = Debug;
+		};
+		3A937E0E1D2B530C002F3C91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GymojiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.bodytech.gymoji.GymojiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gymoji.app/Gymoji";
+			};
+			name = Release;
+		};
+		3A937E101D2B530C002F3C91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GymojiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.bodytech.gymoji.GymojiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Gymoji;
+			};
+			name = Debug;
+		};
+		3A937E111D2B530C002F3C91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GymojiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.bodytech.gymoji.GymojiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Gymoji;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A937DD71D2B530B002F3C91 /* Build configuration list for PBXProject "Gymoji" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A937E071D2B530C002F3C91 /* Debug */,
+				3A937E081D2B530C002F3C91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A937E091D2B530C002F3C91 /* Build configuration list for PBXNativeTarget "Gymoji" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A937E0A1D2B530C002F3C91 /* Debug */,
+				3A937E0B1D2B530C002F3C91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3A937E0C1D2B530C002F3C91 /* Build configuration list for PBXNativeTarget "GymojiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A937E0D1D2B530C002F3C91 /* Debug */,
+				3A937E0E1D2B530C002F3C91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3A937E0F1D2B530C002F3C91 /* Build configuration list for PBXNativeTarget "GymojiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A937E101D2B530C002F3C91 /* Debug */,
+				3A937E111D2B530C002F3C91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A937DD41D2B530B002F3C91 /* Project object */;
+}
