@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>GymojiKeyboard.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -23,6 +28,16 @@
 			<true/>
 		</dict>
 		<key>3A937DFF1D2B530C002F3C91</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3ADAF09E1D35E07700DEFBA5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CC9ECB5D1D37323900A329FC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

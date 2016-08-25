@@ -7,14 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A0A3ADC1D5E2840000E3A1D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A0A3ADB1D5E2840000E3A1D /* GoogleService-Info.plist */; };
+		3A0A3ADD1D5E2840000E3A1D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A0A3ADB1D5E2840000E3A1D /* GoogleService-Info.plist */; };
+		3A0FA4E11D2F557200B83C2F /* landing_bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A0FA4E01D2F557200B83C2F /* landing_bg1.png */; };
+		3A11B8791D413CA3003C132A /* GymojiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A11B8781D413CA3003C132A /* GymojiCell.m */; };
+		3A2AB3641D37A24300949CE7 /* KeyArt.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A2AB3631D37A24300949CE7 /* KeyArt.xcassets */; };
+		3A2AB3661D38D90C00949CE7 /* GymojiList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A2AB3651D38D90C00949CE7 /* GymojiList.plist */; };
+		3A44861E1D2D8A8B0037E1F4 /* PrivacyPolicyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A44861D1D2D8A8B0037E1F4 /* PrivacyPolicyViewController.m */; };
 		3A937DE11D2B530C002F3C91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A937DE01D2B530C002F3C91 /* main.m */; };
-		3A937DE41D2B530C002F3C91 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A937DE31D2B530C002F3C91 /* AppDelegate.m */; };
-		3A937DE71D2B530C002F3C91 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A937DE61D2B530C002F3C91 /* ViewController.m */; };
 		3A937DEA1D2B530C002F3C91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A937DE81D2B530C002F3C91 /* Main.storyboard */; };
 		3A937DEC1D2B530C002F3C91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A937DEB1D2B530C002F3C91 /* Assets.xcassets */; };
 		3A937DEF1D2B530C002F3C91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A937DED1D2B530C002F3C91 /* LaunchScreen.storyboard */; };
 		3A937DFA1D2B530C002F3C91 /* GymojiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A937DF91D2B530C002F3C91 /* GymojiTests.m */; };
 		3A937E051D2B530C002F3C91 /* GymojiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A937E041D2B530C002F3C91 /* GymojiUITests.m */; };
+		3A937E161D2B677D002F3C91 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A937E151D2B677D002F3C91 /* LaunchImage.png */; };
+		3A937E1A1D2BB4FE002F3C91 /* LandingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A937E191D2BB4FE002F3C91 /* LandingViewController.m */; };
+		3A937E1D1D2BB5B4002F3C91 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A937E1C1D2BB5B4002F3C91 /* AppDelegate.m */; };
+		3A937E201D2BB71A002F3C91 /* InstructionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A937E1F1D2BB71A002F3C91 /* InstructionViewController.m */; };
+		3A937E231D2BBB83002F3C91 /* TermsOfUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A937E221D2BBB83002F3C91 /* TermsOfUseViewController.m */; };
+		7ADAFB424FE5CFFAC54758FA /* Pods_Gymoji.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9588936ECE98F61CF9375EDD /* Pods_Gymoji.framework */; };
+		CC9ECB621D37323900A329FC /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9ECB611D37323900A329FC /* KeyboardViewController.m */; };
+		CC9ECB661D37323900A329FC /* GymojiKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CC9ECB5E1D37323900A329FC /* GymojiKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CC9ECB6C1D373FB300A329FC /* GymojiKeyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC9ECB6B1D373FB300A329FC /* GymojiKeyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,15 +46,44 @@
 			remoteGlobalIDString = 3A937DDB1D2B530B002F3C91;
 			remoteInfo = Gymoji;
 		};
+		CC9ECB641D37323900A329FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A937DD41D2B530B002F3C91 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC9ECB5D1D37323900A329FC;
+			remoteInfo = GymojiKeyboard;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CC9ECB6A1D37323900A329FC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CC9ECB661D37323900A329FC /* GymojiKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0509B3E750B4DD67D07ED710 /* Pods-Gymoji.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gymoji.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gymoji/Pods-Gymoji.debug.xcconfig"; sourceTree = "<group>"; };
+		30FC57F2A26207498572F3AC /* Pods-Gymoji.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gymoji.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gymoji/Pods-Gymoji.release.xcconfig"; sourceTree = "<group>"; };
+		3A0A3ADB1D5E2840000E3A1D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3A0A3AE01D5F78FF000E3A1D /* Gymoji.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Gymoji.entitlements; sourceTree = "<group>"; };
+		3A0A3AE11D5F7A7D000E3A1D /* GymojiKeyboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = GymojiKeyboard.entitlements; sourceTree = "<group>"; };
+		3A0FA4E01D2F557200B83C2F /* landing_bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = landing_bg1.png; sourceTree = "<group>"; };
+		3A11B8771D413CA3003C132A /* GymojiCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GymojiCell.h; sourceTree = "<group>"; };
+		3A11B8781D413CA3003C132A /* GymojiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GymojiCell.m; sourceTree = "<group>"; };
+		3A2AB3631D37A24300949CE7 /* KeyArt.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = KeyArt.xcassets; sourceTree = "<group>"; };
+		3A2AB3651D38D90C00949CE7 /* GymojiList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GymojiList.plist; sourceTree = "<group>"; };
+		3A44861C1D2D8A8B0037E1F4 /* PrivacyPolicyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrivacyPolicyViewController.h; path = viewController/PrivacyPolicyViewController.h; sourceTree = "<group>"; };
+		3A44861D1D2D8A8B0037E1F4 /* PrivacyPolicyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PrivacyPolicyViewController.m; path = viewController/PrivacyPolicyViewController.m; sourceTree = "<group>"; };
 		3A937DDC1D2B530B002F3C91 /* Gymoji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gymoji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A937DE01D2B530C002F3C91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3A937DE21D2B530C002F3C91 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		3A937DE31D2B530C002F3C91 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3A937DE51D2B530C002F3C91 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3A937DE61D2B530C002F3C91 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3A937DE91D2B530C002F3C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A937DEB1D2B530C002F3C91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A937DEE1D2B530C002F3C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +94,23 @@
 		3A937E001D2B530C002F3C91 /* GymojiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GymojiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A937E041D2B530C002F3C91 /* GymojiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GymojiUITests.m; sourceTree = "<group>"; };
 		3A937E061D2B530C002F3C91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A937E151D2B677D002F3C91 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LaunchImage.png; path = images/LaunchImage.png; sourceTree = "<group>"; };
+		3A937E181D2BB4FE002F3C91 /* LandingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LandingViewController.h; path = viewController/LandingViewController.h; sourceTree = "<group>"; };
+		3A937E191D2BB4FE002F3C91 /* LandingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LandingViewController.m; path = viewController/LandingViewController.m; sourceTree = "<group>"; };
+		3A937E1B1D2BB5B4002F3C91 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3A937E1C1D2BB5B4002F3C91 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3A937E1E1D2BB71A002F3C91 /* InstructionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InstructionViewController.h; path = viewController/InstructionViewController.h; sourceTree = "<group>"; };
+		3A937E1F1D2BB71A002F3C91 /* InstructionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InstructionViewController.m; path = viewController/InstructionViewController.m; sourceTree = "<group>"; };
+		3A937E211D2BBB83002F3C91 /* TermsOfUseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TermsOfUseViewController.h; path = viewController/TermsOfUseViewController.h; sourceTree = "<group>"; };
+		3A937E221D2BBB83002F3C91 /* TermsOfUseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TermsOfUseViewController.m; path = viewController/TermsOfUseViewController.m; sourceTree = "<group>"; };
+		9588936ECE98F61CF9375EDD /* Pods_Gymoji.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gymoji.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9A699F0F1F4E52A75D6FD70 /* Pods-GymojiKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymojiKeyboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GymojiKeyboard/Pods-GymojiKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		CC9ECB5E1D37323900A329FC /* GymojiKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GymojiKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC9ECB601D37323900A329FC /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
+		CC9ECB611D37323900A329FC /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
+		CC9ECB631D37323900A329FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC9ECB6B1D373FB300A329FC /* GymojiKeyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GymojiKeyboard.storyboard; sourceTree = "<group>"; };
+		FFB5966AAE8ED52D4A25E757 /* Pods-GymojiKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymojiKeyboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-GymojiKeyboard/Pods-GymojiKeyboard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ADAFB424FE5CFFAC54758FA /* Pods_Gymoji.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +136,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CC9ECB5B1D37323900A329FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,7 +152,10 @@
 				3A937DDE1D2B530B002F3C91 /* Gymoji */,
 				3A937DF81D2B530C002F3C91 /* GymojiTests */,
 				3A937E031D2B530C002F3C91 /* GymojiUITests */,
+				CC9ECB5F1D37323900A329FC /* GymojiKeyboard */,
 				3A937DDD1D2B530B002F3C91 /* Products */,
+				DB00C5BA8BE6E75554F7E8C7 /* Pods */,
+				9254AD90E1D57D1292F9C14B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +165,7 @@
 				3A937DDC1D2B530B002F3C91 /* Gymoji.app */,
 				3A937DF51D2B530C002F3C91 /* GymojiTests.xctest */,
 				3A937E001D2B530C002F3C91 /* GymojiUITests.xctest */,
+				CC9ECB5E1D37323900A329FC /* GymojiKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,14 +173,16 @@
 		3A937DDE1D2B530B002F3C91 /* Gymoji */ = {
 			isa = PBXGroup;
 			children = (
-				3A937DE21D2B530C002F3C91 /* AppDelegate.h */,
-				3A937DE31D2B530C002F3C91 /* AppDelegate.m */,
-				3A937DE51D2B530C002F3C91 /* ViewController.h */,
-				3A937DE61D2B530C002F3C91 /* ViewController.m */,
+				3A0A3AE01D5F78FF000E3A1D /* Gymoji.entitlements */,
+				3A937E1B1D2BB5B4002F3C91 /* AppDelegate.h */,
+				3A937E1C1D2BB5B4002F3C91 /* AppDelegate.m */,
+				3A937E171D2BB4C2002F3C91 /* viewController */,
+				3A937E141D2B676D002F3C91 /* images */,
 				3A937DE81D2B530C002F3C91 /* Main.storyboard */,
 				3A937DEB1D2B530C002F3C91 /* Assets.xcassets */,
 				3A937DED1D2B530C002F3C91 /* LaunchScreen.storyboard */,
 				3A937DF01D2B530C002F3C91 /* Info.plist */,
+				3A0A3ADB1D5E2840000E3A1D /* GoogleService-Info.plist */,
 				3A937DDF1D2B530C002F3C91 /* Supporting Files */,
 			);
 			path = Gymoji;
@@ -140,6 +214,65 @@
 			path = GymojiUITests;
 			sourceTree = "<group>";
 		};
+		3A937E141D2B676D002F3C91 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				3A0FA4E01D2F557200B83C2F /* landing_bg1.png */,
+				3A937E151D2B677D002F3C91 /* LaunchImage.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		3A937E171D2BB4C2002F3C91 /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				3A937E181D2BB4FE002F3C91 /* LandingViewController.h */,
+				3A937E191D2BB4FE002F3C91 /* LandingViewController.m */,
+				3A937E1E1D2BB71A002F3C91 /* InstructionViewController.h */,
+				3A937E1F1D2BB71A002F3C91 /* InstructionViewController.m */,
+				3A937E211D2BBB83002F3C91 /* TermsOfUseViewController.h */,
+				3A937E221D2BBB83002F3C91 /* TermsOfUseViewController.m */,
+				3A44861C1D2D8A8B0037E1F4 /* PrivacyPolicyViewController.h */,
+				3A44861D1D2D8A8B0037E1F4 /* PrivacyPolicyViewController.m */,
+			);
+			name = viewController;
+			sourceTree = "<group>";
+		};
+		9254AD90E1D57D1292F9C14B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9588936ECE98F61CF9375EDD /* Pods_Gymoji.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC9ECB5F1D37323900A329FC /* GymojiKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3A0A3AE11D5F7A7D000E3A1D /* GymojiKeyboard.entitlements */,
+				CC9ECB601D37323900A329FC /* KeyboardViewController.h */,
+				CC9ECB611D37323900A329FC /* KeyboardViewController.m */,
+				CC9ECB631D37323900A329FC /* Info.plist */,
+				CC9ECB6B1D373FB300A329FC /* GymojiKeyboard.storyboard */,
+				3A2AB3631D37A24300949CE7 /* KeyArt.xcassets */,
+				3A2AB3651D38D90C00949CE7 /* GymojiList.plist */,
+				3A11B8771D413CA3003C132A /* GymojiCell.h */,
+				3A11B8781D413CA3003C132A /* GymojiCell.m */,
+			);
+			path = GymojiKeyboard;
+			sourceTree = "<group>";
+		};
+		DB00C5BA8BE6E75554F7E8C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0509B3E750B4DD67D07ED710 /* Pods-Gymoji.debug.xcconfig */,
+				30FC57F2A26207498572F3AC /* Pods-Gymoji.release.xcconfig */,
+				B9A699F0F1F4E52A75D6FD70 /* Pods-GymojiKeyboard.debug.xcconfig */,
+				FFB5966AAE8ED52D4A25E757 /* Pods-GymojiKeyboard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,13 +280,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A937E091D2B530C002F3C91 /* Build configuration list for PBXNativeTarget "Gymoji" */;
 			buildPhases = (
+				190142F678F69BC9987FC66A /* 📦 Check Pods Manifest.lock */,
 				3A937DD81D2B530B002F3C91 /* Sources */,
 				3A937DD91D2B530B002F3C91 /* Frameworks */,
 				3A937DDA1D2B530B002F3C91 /* Resources */,
+				CC9ECB6A1D37323900A329FC /* Embed App Extensions */,
+				DDD6857FE1F338F212D8A721 /* 📦 Embed Pods Frameworks */,
+				5BD628C7B4E5B0E6E9E1EE31 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CC9ECB651D37323900A329FC /* PBXTargetDependency */,
 			);
 			name = Gymoji;
 			productName = Gymoji;
@@ -196,6 +334,23 @@
 			productReference = 3A937E001D2B530C002F3C91 /* GymojiUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		CC9ECB5D1D37323900A329FC /* GymojiKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC9ECB671D37323900A329FC /* Build configuration list for PBXNativeTarget "GymojiKeyboard" */;
+			buildPhases = (
+				CC9ECB5A1D37323900A329FC /* Sources */,
+				CC9ECB5B1D37323900A329FC /* Frameworks */,
+				CC9ECB5C1D37323900A329FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GymojiKeyboard;
+			productName = GymojiKeyboard;
+			productReference = CC9ECB5E1D37323900A329FC /* GymojiKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -207,6 +362,18 @@
 				TargetAttributes = {
 					3A937DDB1D2B530B002F3C91 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = BK9CR824Z2;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.SafariKeychain = {
+								enabled = 0;
+							};
+						};
 					};
 					3A937DF41D2B530C002F3C91 = {
 						CreatedOnToolsVersion = 7.3;
@@ -215,6 +382,15 @@
 					3A937DFF1D2B530C002F3C91 = {
 						CreatedOnToolsVersion = 7.3;
 						TestTargetID = 3A937DDB1D2B530B002F3C91;
+					};
+					CC9ECB5D1D37323900A329FC = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = BK9CR824Z2;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -234,6 +410,7 @@
 				3A937DDB1D2B530B002F3C91 /* Gymoji */,
 				3A937DF41D2B530C002F3C91 /* GymojiTests */,
 				3A937DFF1D2B530C002F3C91 /* GymojiUITests */,
+				CC9ECB5D1D37323900A329FC /* GymojiKeyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -243,9 +420,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A937E161D2B677D002F3C91 /* LaunchImage.png in Resources */,
 				3A937DEF1D2B530C002F3C91 /* LaunchScreen.storyboard in Resources */,
 				3A937DEC1D2B530C002F3C91 /* Assets.xcassets in Resources */,
+				3A0FA4E11D2F557200B83C2F /* landing_bg1.png in Resources */,
 				3A937DEA1D2B530C002F3C91 /* Main.storyboard in Resources */,
+				3A0A3ADC1D5E2840000E3A1D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,16 +443,78 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CC9ECB5C1D37323900A329FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A2AB3661D38D90C00949CE7 /* GymojiList.plist in Resources */,
+				3A0A3ADD1D5E2840000E3A1D /* GoogleService-Info.plist in Resources */,
+				CC9ECB6C1D373FB300A329FC /* GymojiKeyboard.storyboard in Resources */,
+				3A2AB3641D37A24300949CE7 /* KeyArt.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		190142F678F69BC9987FC66A /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5BD628C7B4E5B0E6E9E1EE31 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gymoji/Pods-Gymoji-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDD6857FE1F338F212D8A721 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gymoji/Pods-Gymoji-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3A937DD81D2B530B002F3C91 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A937DE71D2B530C002F3C91 /* ViewController.m in Sources */,
-				3A937DE41D2B530C002F3C91 /* AppDelegate.m in Sources */,
+				3A937E1D1D2BB5B4002F3C91 /* AppDelegate.m in Sources */,
+				3A937E1A1D2BB4FE002F3C91 /* LandingViewController.m in Sources */,
 				3A937DE11D2B530C002F3C91 /* main.m in Sources */,
+				3A44861E1D2D8A8B0037E1F4 /* PrivacyPolicyViewController.m in Sources */,
+				3A937E201D2BB71A002F3C91 /* InstructionViewController.m in Sources */,
+				3A937E231D2BBB83002F3C91 /* TermsOfUseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +534,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CC9ECB5A1D37323900A329FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC9ECB621D37323900A329FC /* KeyboardViewController.m in Sources */,
+				3A11B8791D413CA3003C132A /* GymojiCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -304,6 +555,11 @@
 			isa = PBXTargetDependency;
 			target = 3A937DDB1D2B530B002F3C91 /* Gymoji */;
 			targetProxy = 3A937E011D2B530C002F3C91 /* PBXContainerItemProxy */;
+		};
+		CC9ECB651D37323900A329FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC9ECB5D1D37323900A329FC /* GymojiKeyboard */;
+			targetProxy = CC9ECB641D37323900A329FC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -345,9 +601,11 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Body Technology Limited (BK9CR824Z2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Body Technology Limited (BK9CR824Z2)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -367,6 +625,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "adb99c3c-2857-4f3b-9746-012ff54c3cd5";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -390,9 +649,11 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Body Technology Limited (BK9CR824Z2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Body Technology Limited (BK9CR824Z2)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -405,6 +666,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "adb99c3c-2857-4f3b-9746-012ff54c3cd5";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -413,23 +675,39 @@
 		};
 		3A937E0A1D2B530C002F3C91 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0509B3E750B4DD67D07ED710 /* Pods-Gymoji.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = Gymoji/Gymoji.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Body Technology Limited (BK9CR824Z2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Body Technology Limited (BK9CR824Z2)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				INFOPLIST_FILE = Gymoji/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.bodytech.gymoji.Gymoji;
+				PRODUCT_BUNDLE_IDENTIFIER = io.bodytech.gymoji;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		3A937E0B1D2B530C002F3C91 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30FC57F2A26207498572F3AC /* Pods-Gymoji.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = Gymoji/Gymoji.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Body Technology Limited (BK9CR824Z2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Body Technology Limited (BK9CR824Z2)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
 				INFOPLIST_FILE = Gymoji/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.bodytech.gymoji.Gymoji;
+				PRODUCT_BUNDLE_IDENTIFIER = io.bodytech.gymoji;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -479,6 +757,42 @@
 			};
 			name = Release;
 		};
+		CC9ECB681D37323900A329FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9A699F0F1F4E52A75D6FD70 /* Pods-GymojiKeyboard.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GymojiKeyboard/GymojiKeyboard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Body Technology Limited (BK9CR824Z2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Body Technology Limited (BK9CR824Z2)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				INFOPLIST_FILE = GymojiKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.bodytech.gymoji.GymojiKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7c46e4c2-4d71-485a-b293-47046b27c69b";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CC9ECB691D37323900A329FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFB5966AAE8ED52D4A25E757 /* Pods-GymojiKeyboard.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GymojiKeyboard/GymojiKeyboard.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Body Technology Limited (BK9CR824Z2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Body Technology Limited (BK9CR824Z2)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				INFOPLIST_FILE = GymojiKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.bodytech.gymoji.GymojiKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7c46e4c2-4d71-485a-b293-47046b27c69b";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -498,6 +812,7 @@
 				3A937E0B1D2B530C002F3C91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A937E0C1D2B530C002F3C91 /* Build configuration list for PBXNativeTarget "GymojiTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +821,7 @@
 				3A937E0E1D2B530C002F3C91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A937E0F1D2B530C002F3C91 /* Build configuration list for PBXNativeTarget "GymojiUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +830,16 @@
 				3A937E111D2B530C002F3C91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC9ECB671D37323900A329FC /* Build configuration list for PBXNativeTarget "GymojiKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC9ECB681D37323900A329FC /* Debug */,
+				CC9ECB691D37323900A329FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
