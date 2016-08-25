@@ -1,0 +1,705 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		453766DD87C5B887B86B73477835778E /* Pods-GymojiKeyboard-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BDB5CD69ED0EF8525011BA8D129D9B25 /* Pods-GymojiKeyboard-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C42946304C43F8EB9A0037EF55F432B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		781C24DF6AD9A98C0B8CDB012726B703 /* Pods-Gymoji-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE7B902D4B7D7DAE4C1536CBD956ACD5 /* Pods-Gymoji-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D417F41334778447227F718A9E8BFD5B /* Pods-Gymoji-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 906816BE22E02BCDD8EF2958B61D3F73 /* Pods-Gymoji-dummy.m */; };
+		DA167A3E98853FB1AB98BF5B9FE14184 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		DDFFCFCFD3130B31F101815E3513B7C7 /* Pods-GymojiKeyboard-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A236682C6B68F64BECA0FD7DB3978650 /* Pods-GymojiKeyboard-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0B398E6BF5E8DECE85C45591385176B2 /* GoogleIPhoneUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleIPhoneUtilities.framework; path = Frameworks/GoogleIPhoneUtilities.framework; sourceTree = "<group>"; };
+		16CFFA27E73F396EC9D90B93B8D0CE5D /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		197526668C1F6FC3A8C38A5BB851631C /* Pods-Gymoji.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Gymoji.modulemap"; sourceTree = "<group>"; };
+		36BE20E18096AB06F9CC5BC6A847991A /* Pods_GymojiKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GymojiKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49AE2062EF7FE7D13CC8E7ACBA2DC5F2 /* Pods-GymojiKeyboard-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GymojiKeyboard-acknowledgements.plist"; sourceTree = "<group>"; };
+		4D85BFF5FA25498F50039340A75738D8 /* Pods-GymojiKeyboard-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GymojiKeyboard-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4DA97034C177B1E70D1126D50BDC694E /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Analytics/Sources/Firebase.h; sourceTree = "<group>"; };
+		672733FDA77A3A002794CE54C67FD1D8 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		6E5D94AA089970E13CF402659B077BF5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FF5E2FCB9ECBC9E79EDB6348171DDA0 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
+		70D39E55C7329EC8BF45B2637CA7891A /* Pods-GymojiKeyboard-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GymojiKeyboard-resources.sh"; sourceTree = "<group>"; };
+		7561CD4D0462CBEF32EBB8806BA83AC6 /* Pods-Gymoji-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Gymoji-frameworks.sh"; sourceTree = "<group>"; };
+		7C280B1D919D26D1B3500B380300EA05 /* Pods-GymojiKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GymojiKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		860F3478584423688367E095EDD5B2ED /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ADF03A6FF2545C3D1DF7C2582426204 /* FirebaseStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseStorage.framework; path = Frameworks/FirebaseStorage.framework; sourceTree = "<group>"; };
+		8FEBFC6A7F6B5AC4540400B5BB1D2C0C /* Pods-GymojiKeyboard-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GymojiKeyboard-frameworks.sh"; sourceTree = "<group>"; };
+		906816BE22E02BCDD8EF2958B61D3F73 /* Pods-Gymoji-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Gymoji-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		968340620DBC3BF61CBAAD132496164F /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		9C0AFCA6695738EBCEEFDDA17DE4B0BB /* Pods_Gymoji.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gymoji.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A236682C6B68F64BECA0FD7DB3978650 /* Pods-GymojiKeyboard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GymojiKeyboard-dummy.m"; sourceTree = "<group>"; };
+		A6649CD442FD75590B4F18AB19B72604 /* Pods-Gymoji-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Gymoji-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AF46AEBB876BF4694B364020FCEE00D3 /* Pods-Gymoji-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Gymoji-resources.sh"; sourceTree = "<group>"; };
+		B0DE40706B4EDF6503B9B82ED4CA94E8 /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Sources/FIRInstanceID.h; sourceTree = "<group>"; };
+		B7E8B067EB68F119517FCEA4B18D599D /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		B7F49ED44750C9EEBAC31B13DE29E39A /* FirebaseMessaging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseMessaging.framework; path = Frameworks/frameworks/FirebaseMessaging.framework; sourceTree = "<group>"; };
+		BDB5CD69ED0EF8525011BA8D129D9B25 /* Pods-GymojiKeyboard-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GymojiKeyboard-umbrella.h"; sourceTree = "<group>"; };
+		C4161CA9B686BF5DC3039A1C0D8F0C8B /* FIRMessaging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRMessaging.h; path = Sources/FIRMessaging.h; sourceTree = "<group>"; };
+		C65CCFEAE8E771BFC75378B2950F787C /* Pods-Gymoji-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Gymoji-acknowledgements.plist"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D04AA09DD0B61DC1F6AF31652CF30C3D /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		EE54822A2677007E0EC0309E6D3E7213 /* Pods-Gymoji.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Gymoji.debug.xcconfig"; sourceTree = "<group>"; };
+		EE7B902D4B7D7DAE4C1536CBD956ACD5 /* Pods-Gymoji-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Gymoji-umbrella.h"; sourceTree = "<group>"; };
+		EFF5C3A7CF47BE147EE86758AB6E2A8A /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		F6A37AC0DA48EC1A5744808568BD636D /* Pods-Gymoji.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Gymoji.release.xcconfig"; sourceTree = "<group>"; };
+		F78A9EDC62B0135343D95F5CFC7A6D75 /* Pods-GymojiKeyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GymojiKeyboard.release.xcconfig"; sourceTree = "<group>"; };
+		F906BC4CF75D36B9CFA55172418DE724 /* Pods-GymojiKeyboard.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GymojiKeyboard.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BA8A38A6B30E468CD1717BD840A5412 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C42946304C43F8EB9A0037EF55F432B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27FEDC5A21586EB963A2783A86474B86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA167A3E98853FB1AB98BF5B9FE14184 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06285701006E8F6A040A5C4B4658FE89 /* Pods-Gymoji */ = {
+			isa = PBXGroup;
+			children = (
+				6E5D94AA089970E13CF402659B077BF5 /* Info.plist */,
+				197526668C1F6FC3A8C38A5BB851631C /* Pods-Gymoji.modulemap */,
+				A6649CD442FD75590B4F18AB19B72604 /* Pods-Gymoji-acknowledgements.markdown */,
+				C65CCFEAE8E771BFC75378B2950F787C /* Pods-Gymoji-acknowledgements.plist */,
+				906816BE22E02BCDD8EF2958B61D3F73 /* Pods-Gymoji-dummy.m */,
+				7561CD4D0462CBEF32EBB8806BA83AC6 /* Pods-Gymoji-frameworks.sh */,
+				AF46AEBB876BF4694B364020FCEE00D3 /* Pods-Gymoji-resources.sh */,
+				EE7B902D4B7D7DAE4C1536CBD956ACD5 /* Pods-Gymoji-umbrella.h */,
+				EE54822A2677007E0EC0309E6D3E7213 /* Pods-Gymoji.debug.xcconfig */,
+				F6A37AC0DA48EC1A5744808568BD636D /* Pods-Gymoji.release.xcconfig */,
+			);
+			name = "Pods-Gymoji";
+			path = "Target Support Files/Pods-Gymoji";
+			sourceTree = "<group>";
+		};
+		11A1BAABA3110DFB0C8760FB24AE540E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7E8B067EB68F119517FCEA4B18D599D /* FirebaseDatabase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1485843A0FF53E99398CF31769C7F33E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D04AA09DD0B61DC1F6AF31652CF30C3D /* GoogleUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		222AD2163358C1AB8B1EDECBC830B2E9 /* Pods-GymojiKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				860F3478584423688367E095EDD5B2ED /* Info.plist */,
+				F906BC4CF75D36B9CFA55172418DE724 /* Pods-GymojiKeyboard.modulemap */,
+				4D85BFF5FA25498F50039340A75738D8 /* Pods-GymojiKeyboard-acknowledgements.markdown */,
+				49AE2062EF7FE7D13CC8E7ACBA2DC5F2 /* Pods-GymojiKeyboard-acknowledgements.plist */,
+				A236682C6B68F64BECA0FD7DB3978650 /* Pods-GymojiKeyboard-dummy.m */,
+				8FEBFC6A7F6B5AC4540400B5BB1D2C0C /* Pods-GymojiKeyboard-frameworks.sh */,
+				70D39E55C7329EC8BF45B2637CA7891A /* Pods-GymojiKeyboard-resources.sh */,
+				BDB5CD69ED0EF8525011BA8D129D9B25 /* Pods-GymojiKeyboard-umbrella.h */,
+				7C280B1D919D26D1B3500B380300EA05 /* Pods-GymojiKeyboard.debug.xcconfig */,
+				F78A9EDC62B0135343D95F5CFC7A6D75 /* Pods-GymojiKeyboard.release.xcconfig */,
+			);
+			name = "Pods-GymojiKeyboard";
+			path = "Target Support Files/Pods-GymojiKeyboard";
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		41140A1DE1856F636201466A14DE2FD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6FF5E2FCB9ECBC9E79EDB6348171DDA0 /* GoogleNetworkingUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4E8B968A30757F50E83FB4C647C6FD8E /* GoogleUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				1485843A0FF53E99398CF31769C7F33E /* Frameworks */,
+			);
+			path = GoogleUtilities;
+			sourceTree = "<group>";
+		};
+		513438FB501CF064660ECAB50ACB55F4 /* GoogleNetworkingUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				41140A1DE1856F636201466A14DE2FD1 /* Frameworks */,
+			);
+			path = GoogleNetworkingUtilities;
+			sourceTree = "<group>";
+		};
+		58048180765F79723A51B823F5057173 /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				CCE219ED7032302562007D21273A6E44 /* Frameworks */,
+			);
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		5992FEFB89E8CEA9E7599FCDBBF5BB0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				672733FDA77A3A002794CE54C67FD1D8 /* GoogleInterchangeUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		59D968888E0CD32A4BBDD2401B653A04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C0AFCA6695738EBCEEFDDA17DE4B0BB /* Pods_Gymoji.framework */,
+				36BE20E18096AB06F9CC5BC6A847991A /* Pods_GymojiKeyboard.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6AE910585A5D5A35838554ECCBD55BC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B398E6BF5E8DECE85C45591385176B2 /* GoogleIPhoneUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B5B33DB561FB27470D1724EEEC2B2D9 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				4DA97034C177B1E70D1126D50BDC694E /* Firebase.h */,
+			);
+			name = Analytics;
+			sourceTree = "<group>";
+		};
+		6D598DF1302275ADBFAC2B0D8A1A4FF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7F49ED44750C9EEBAC31B13DE29E39A /* FirebaseMessaging.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6DC570145680116FE0825A467B4C55D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16CFFA27E73F396EC9D90B93B8D0CE5D /* FirebaseInstanceID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7938C9E451DEF8E236513ABBB4C4540B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8ADF03A6FF2545C3D1DF7C2582426204 /* FirebaseStorage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				CB249A5818CCCA32C28E7C232C877673 /* Pods */,
+				59D968888E0CD32A4BBDD2401B653A04 /* Products */,
+				80640EB84E2CE49D4161F46944492299 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		80640EB84E2CE49D4161F46944492299 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				06285701006E8F6A040A5C4B4658FE89 /* Pods-Gymoji */,
+				222AD2163358C1AB8B1EDECBC830B2E9 /* Pods-GymojiKeyboard */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8AC2C5DFFF28038512D2C07B16A54997 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				6B5B33DB561FB27470D1724EEEC2B2D9 /* Analytics */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		ABB16B0405D258E0282E803AA0EF60DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFF5C3A7CF47BE147EE86758AB6E2A8A /* GoogleSymbolUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD35C4AF04C60BF6B15A138F6B5A23DD /* GoogleInterchangeUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				5992FEFB89E8CEA9E7599FCDBBF5BB0B /* Frameworks */,
+			);
+			path = GoogleInterchangeUtilities;
+			sourceTree = "<group>";
+		};
+		BFBBA74CA91F2D5437E5483DBC508CCB /* FirebaseInstanceID */ = {
+			isa = PBXGroup;
+			children = (
+				B0DE40706B4EDF6503B9B82ED4CA94E8 /* FIRInstanceID.h */,
+				6DC570145680116FE0825A467B4C55D7 /* Frameworks */,
+			);
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		C7CF3F12F325636CA27201B12207DBDD /* FirebaseMessaging */ = {
+			isa = PBXGroup;
+			children = (
+				C4161CA9B686BF5DC3039A1C0D8F0C8B /* FIRMessaging.h */,
+				6D598DF1302275ADBFAC2B0D8A1A4FF3 /* Frameworks */,
+			);
+			path = FirebaseMessaging;
+			sourceTree = "<group>";
+		};
+		C94B4839E2C7C4AD44B949FA8EDF7B73 /* GoogleIPhoneUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				6AE910585A5D5A35838554ECCBD55BC3 /* Frameworks */,
+			);
+			path = GoogleIPhoneUtilities;
+			sourceTree = "<group>";
+		};
+		CB249A5818CCCA32C28E7C232C877673 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8AC2C5DFFF28038512D2C07B16A54997 /* Firebase */,
+				58048180765F79723A51B823F5057173 /* FirebaseAnalytics */,
+				CDE37B60BA499833EF4A8E291CAEF9BA /* FirebaseDatabase */,
+				BFBBA74CA91F2D5437E5483DBC508CCB /* FirebaseInstanceID */,
+				C7CF3F12F325636CA27201B12207DBDD /* FirebaseMessaging */,
+				F73701E38557D61C975294D73651F377 /* FirebaseStorage */,
+				BD35C4AF04C60BF6B15A138F6B5A23DD /* GoogleInterchangeUtilities */,
+				C94B4839E2C7C4AD44B949FA8EDF7B73 /* GoogleIPhoneUtilities */,
+				513438FB501CF064660ECAB50ACB55F4 /* GoogleNetworkingUtilities */,
+				E661C29FA9F51E9B5D7F3BE2F162E435 /* GoogleSymbolUtilities */,
+				4E8B968A30757F50E83FB4C647C6FD8E /* GoogleUtilities */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CCE219ED7032302562007D21273A6E44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				968340620DBC3BF61CBAAD132496164F /* FirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDE37B60BA499833EF4A8E291CAEF9BA /* FirebaseDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				11A1BAABA3110DFB0C8760FB24AE540E /* Frameworks */,
+			);
+			path = FirebaseDatabase;
+			sourceTree = "<group>";
+		};
+		E661C29FA9F51E9B5D7F3BE2F162E435 /* GoogleSymbolUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				ABB16B0405D258E0282E803AA0EF60DC /* Frameworks */,
+			);
+			path = GoogleSymbolUtilities;
+			sourceTree = "<group>";
+		};
+		F73701E38557D61C975294D73651F377 /* FirebaseStorage */ = {
+			isa = PBXGroup;
+			children = (
+				7938C9E451DEF8E236513ABBB4C4540B /* Frameworks */,
+			);
+			path = FirebaseStorage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2757A6DE26B9275470012EB3E9113A4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				781C24DF6AD9A98C0B8CDB012726B703 /* Pods-Gymoji-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFE18114F5547790414E1BD6EC511D14 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				453766DD87C5B887B86B73477835778E /* Pods-GymojiKeyboard-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C407C08A61295412555E63664E4CEDC4 /* Pods-GymojiKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 933DEF54BD0BEC8B155142DAE7E78717 /* Build configuration list for PBXNativeTarget "Pods-GymojiKeyboard" */;
+			buildPhases = (
+				17F5E4007FB02686B784388122B035E2 /* Sources */,
+				27FEDC5A21586EB963A2783A86474B86 /* Frameworks */,
+				FFE18114F5547790414E1BD6EC511D14 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GymojiKeyboard";
+			productName = "Pods-GymojiKeyboard";
+			productReference = 36BE20E18096AB06F9CC5BC6A847991A /* Pods_GymojiKeyboard.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D6B419858E437395CA0C7ACD3D97A9FA /* Pods-Gymoji */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C27C89CC7B4A51EDCA6B480AD5031FE /* Build configuration list for PBXNativeTarget "Pods-Gymoji" */;
+			buildPhases = (
+				AD35462E62AB297A5978BA8B817DC3FA /* Sources */,
+				1BA8A38A6B30E468CD1717BD840A5412 /* Frameworks */,
+				D2757A6DE26B9275470012EB3E9113A4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Gymoji";
+			productName = "Pods-Gymoji";
+			productReference = 9C0AFCA6695738EBCEEFDDA17DE4B0BB /* Pods_Gymoji.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 59D968888E0CD32A4BBDD2401B653A04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6B419858E437395CA0C7ACD3D97A9FA /* Pods-Gymoji */,
+				C407C08A61295412555E63664E4CEDC4 /* Pods-GymojiKeyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17F5E4007FB02686B784388122B035E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDFFCFCFD3130B31F101815E3513B7C7 /* Pods-GymojiKeyboard-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD35462E62AB297A5978BA8B817DC3FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D417F41334778447227F718A9E8BFD5B /* Pods-Gymoji-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		13C7A46857C0667C06FDB7742565F8D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6A37AC0DA48EC1A5744808568BD636D /* Pods-Gymoji.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Gymoji/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Gymoji/Pods-Gymoji.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Gymoji;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		47BEF9D903506B003EA5C2B249729489 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6C45AD9EF8C6F29FBF7E000E4D4DF561 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C280B1D919D26D1B3500B380300EA05 /* Pods-GymojiKeyboard.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GymojiKeyboard/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GymojiKeyboard/Pods-GymojiKeyboard.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GymojiKeyboard;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		84E2619DCDC7F8613D0673F5B462C429 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F78A9EDC62B0135343D95F5CFC7A6D75 /* Pods-GymojiKeyboard.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GymojiKeyboard/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GymojiKeyboard/Pods-GymojiKeyboard.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_GymojiKeyboard;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AAF678CED40D3499169D10F63CA0719E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF165217E92791A7574FA0D90A58BA3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE54822A2677007E0EC0309E6D3E7213 /* Pods-Gymoji.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Gymoji/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Gymoji/Pods-Gymoji.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Gymoji;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C27C89CC7B4A51EDCA6B480AD5031FE /* Build configuration list for PBXNativeTarget "Pods-Gymoji" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF165217E92791A7574FA0D90A58BA3A /* Debug */,
+				13C7A46857C0667C06FDB7742565F8D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47BEF9D903506B003EA5C2B249729489 /* Debug */,
+				AAF678CED40D3499169D10F63CA0719E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		933DEF54BD0BEC8B155142DAE7E78717 /* Build configuration list for PBXNativeTarget "Pods-GymojiKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C45AD9EF8C6F29FBF7E000E4D4DF561 /* Debug */,
+				84E2619DCDC7F8613D0673F5B462C429 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
