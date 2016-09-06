@@ -34,14 +34,11 @@
                         <viewControllerLayoutGuide type="bottom" id="gCZ-pF-tcX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bu2-hv-DfK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="438" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landing_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Ct6-S8-6Kg">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="footer_img" translatesAutoresizingMaskIntoConstraints="NO" id="jpq-Qv-uR6">
-                                <rect key="frame" x="31" y="423" width="240" height="128"/>
+                                <rect key="frame" x="0.0" y="0.0" width="438" height="1024"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1z7-3H-OsG">
                                 <rect key="frame" x="-29" y="295" width="261" height="78"/>
@@ -51,16 +48,6 @@
                                 </variation>
                                 <connections>
                                     <segue destination="A0M-ho-jnl" kind="push" id="eG4-fT-L8Z"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPd-Av-d7I">
-                                <rect key="frame" x="114" y="286" width="261" height="78"/>
-                                <state key="normal" image="privacy_btn"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="191" y="334" width="154" height="46"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="cO5-yt-KM3" kind="push" id="WGT-v2-F1E"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="b6V-L0-sfa">
@@ -75,7 +62,8 @@
                                         <exclude reference="t7I-nP-0gE"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="67" y="199" width="304" height="156"/>
                                     <mask key="constraints">
                                         <include reference="t7I-nP-0gE"/>
                                     </mask>
@@ -114,18 +102,21 @@
                                     <segue destination="ONY-bS-YlC" kind="push" id="nKQ-0C-taI"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPd-Av-d7I">
+                                <rect key="frame" x="114" y="286" width="261" height="78"/>
+                                <state key="normal" image="privacy_btn"/>
+                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="191" y="334" width="154" height="46"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="cO5-yt-KM3" kind="push" id="WGT-v2-F1E"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="cPd-Av-d7I" firstAttribute="width" secondItem="1z7-3H-OsG" secondAttribute="width" id="0Q7-rE-T0Q"/>
                             <constraint firstItem="1z7-3H-OsG" firstAttribute="leading" secondItem="Znw-HA-kEt" secondAttribute="leading" id="37e-rW-Bzq"/>
-                            <constraint firstAttribute="bottom" secondItem="jpq-Qv-uR6" secondAttribute="bottom" id="4jI-iE-OkU"/>
-                            <constraint firstItem="jpq-Qv-uR6" firstAttribute="top" secondItem="bu2-hv-DfK" secondAttribute="bottom" multiplier="1329:2048" id="5CB-mS-2s2">
-                                <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
-                            </constraint>
-                            <constraint firstItem="jpq-Qv-uR6" firstAttribute="top" secondItem="bu2-hv-DfK" secondAttribute="bottom" multiplier="790:1136" id="7Z6-RL-fer">
-                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
-                            </constraint>
                             <constraint firstItem="1z7-3H-OsG" firstAttribute="leading" secondItem="Znw-HA-kEt" secondAttribute="leading" id="8BU-EI-Mrt"/>
                             <constraint firstItem="Znw-HA-kEt" firstAttribute="top" secondItem="b6V-L0-sfa" secondAttribute="bottom" multiplier="685:660" constant="32" id="BOZ-eI-PKI">
                                 <variation key="heightClass=regular-widthClass=compact" constant="8" symbolic="YES"/>
@@ -139,10 +130,6 @@
                             <constraint firstItem="cPd-Av-d7I" firstAttribute="trailing" secondItem="Znw-HA-kEt" secondAttribute="trailing" id="KvR-uk-go5"/>
                             <constraint firstItem="b6V-L0-sfa" firstAttribute="width" secondItem="bu2-hv-DfK" secondAttribute="width" multiplier="917:1536" id="L6x-9H-hiN"/>
                             <constraint firstItem="1z7-3H-OsG" firstAttribute="width" secondItem="Znw-HA-kEt" secondAttribute="width" multiplier="0.49" id="Lge-TM-yVa"/>
-                            <constraint firstAttribute="bottom" secondItem="jpq-Qv-uR6" secondAttribute="bottom" id="Mto-jR-mHy"/>
-                            <constraint firstAttribute="trailing" secondItem="jpq-Qv-uR6" secondAttribute="trailing" id="Nkb-Bc-C9G"/>
-                            <constraint firstAttribute="trailing" secondItem="jpq-Qv-uR6" secondAttribute="trailing" id="Qdc-MB-GS3"/>
-                            <constraint firstItem="jpq-Qv-uR6" firstAttribute="leading" secondItem="bu2-hv-DfK" secondAttribute="leading" id="QeX-ZT-2Jg"/>
                             <constraint firstItem="b6V-L0-sfa" firstAttribute="top" secondItem="bu2-hv-DfK" secondAttribute="bottom" multiplier="394:2048" constant="98" id="RFc-34-RnO">
                                 <variation key="heightClass=regular-widthClass=regular" constant="0.0"/>
                             </constraint>
@@ -150,7 +137,6 @@
                             <constraint firstItem="Znw-HA-kEt" firstAttribute="centerX" secondItem="bu2-hv-DfK" secondAttribute="centerX" id="TLj-WP-Q20"/>
                             <constraint firstItem="cPd-Av-d7I" firstAttribute="trailing" secondItem="Znw-HA-kEt" secondAttribute="trailing" id="TsS-sb-RMW"/>
                             <constraint firstItem="Znw-HA-kEt" firstAttribute="width" secondItem="bu2-hv-DfK" secondAttribute="width" multiplier="537:640" id="UUs-cf-OVd"/>
-                            <constraint firstItem="jpq-Qv-uR6" firstAttribute="leading" secondItem="bu2-hv-DfK" secondAttribute="leading" id="Wxg-dN-5Wa"/>
                             <constraint firstItem="Ct6-S8-6Kg" firstAttribute="height" secondItem="bu2-hv-DfK" secondAttribute="height" id="ZRi-od-awz"/>
                             <constraint firstItem="b6V-L0-sfa" firstAttribute="centerX" secondItem="bu2-hv-DfK" secondAttribute="centerX" id="a73-L6-2Lo"/>
                             <constraint firstItem="b6V-L0-sfa" firstAttribute="centerX" secondItem="bu2-hv-DfK" secondAttribute="centerX" id="at9-r8-fk3"/>
@@ -200,14 +186,6 @@
                                 <exclude reference="TsS-sb-RMW"/>
                                 <exclude reference="cng-pc-skf"/>
                                 <exclude reference="lyo-Bs-dG6"/>
-                                <exclude reference="4jI-iE-OkU"/>
-                                <exclude reference="5CB-mS-2s2"/>
-                                <exclude reference="7Z6-RL-fer"/>
-                                <exclude reference="Mto-jR-mHy"/>
-                                <exclude reference="Nkb-Bc-C9G"/>
-                                <exclude reference="Qdc-MB-GS3"/>
-                                <exclude reference="QeX-ZT-2Jg"/>
-                                <exclude reference="Wxg-dN-5Wa"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -226,10 +204,6 @@
                                 <include reference="E7m-ea-VQ8"/>
                                 <include reference="TsS-sb-RMW"/>
                                 <include reference="lyo-Bs-dG6"/>
-                                <include reference="4jI-iE-OkU"/>
-                                <include reference="7Z6-RL-fer"/>
-                                <include reference="Nkb-Bc-C9G"/>
-                                <include reference="QeX-ZT-2Jg"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
@@ -248,18 +222,15 @@
                                 <include reference="K63-Dr-Z75"/>
                                 <include reference="KvR-uk-go5"/>
                                 <include reference="cng-pc-skf"/>
-                                <include reference="5CB-mS-2s2"/>
-                                <include reference="Mto-jR-mHy"/>
-                                <include reference="Qdc-MB-GS3"/>
-                                <include reference="Wxg-dN-5Wa"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="H6g-Xj-UG4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad-2/3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hwa-v7-ity" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="459.75" y="433.125"/>
+            <point key="canvasLocation" x="463.5" y="357"/>
         </scene>
         <!--Terms Of Use View Controller-->
         <scene sceneID="un5-Z6-IJS">
@@ -1193,7 +1164,6 @@ If you have any questions about this Privacy Policy, please contact us.
         <image name="back_icon" width="40" height="40"/>
         <image name="back_txt" width="244" height="27"/>
         <image name="character" width="632" height="283"/>
-        <image name="footer_img" width="640" height="344"/>
         <image name="footer_txt" width="532" height="15"/>
         <image name="howtouse_btn" width="537" height="78"/>
         <image name="instsallpop" width="536" height="400"/>

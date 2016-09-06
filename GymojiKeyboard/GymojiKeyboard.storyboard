@@ -265,7 +265,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="376" height="224"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gymoji_1" translatesAutoresizingMaskIntoConstraints="NO" id="UYy-Lp-fCY">
+                                                <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UYy-Lp-fCY">
                                                     <rect key="frame" x="98" y="22" width="180" height="180"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="UYy-Lp-fCY" secondAttribute="height" multiplier="1:1" id="8Ua-78-1eG"/>
@@ -330,7 +330,6 @@
     <resources>
         <image name="delete_icon" width="75" height="53"/>
         <image name="equiment1" width="67" height="56"/>
-        <image name="gymoji_1" width="110" height="90"/>
         <image name="marcle1" width="53" height="56"/>
         <image name="sticker2_unselected" width="42" height="49"/>
         <image name="sticker4_unselected" width="60" height="49"/>

@@ -31,8 +31,16 @@
 @property (strong, nonatomic) UIImage *tempImage;
 @property (nonatomic)int temp;
 @property (nonatomic)int viewtemp;
+@property (nonatomic)int increaseNumber;
 @property (strong, nonatomic)NSMutableArray *stickers;
-@property (strong, nonatomic)NSMutableArray *stickers1;
+@property (strong, nonatomic)UILabel *downloadStringwithEquiment;
+@property (strong, nonatomic)UILabel *downloadStringwithworkouts;
+@property (strong, nonatomic)UILabel *downloadStringwithmuscles;
+@property (strong, nonatomic)UILabel *downloadStringwithbodybuilding;
+@property (strong, nonatomic)UILabel *downloadStringwithgymselfie;
+@property (nonatomic)Boolean flagForRemoveDownloadStringwith;
+@property (nonatomic, strong)UILabel *tempLabel;
+
 
 @property (strong, nonatomic) FIRStorageReference *storageRef;
 @end
@@ -128,26 +136,50 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    _increaseNumber = 0;
+
+    NSTimer *t = [NSTimer scheduledTimerWithTimeInterval:2
+                                    target:self
+                                    selector:@selector(targetMethod:)
+                                    userInfo:nil
+                                    repeats:YES];
 
     self.stickers = [[NSMutableArray alloc]init];
+    
     self.imagesArray = [[NSMutableArray alloc]init];
     NSUserDefaults *userDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.bodytech.gymoji"];
-    
-    for(int j=0;j<5;j++){
+    if([userDefaults objectForKey:@"imagePath0"]!=nil){
         
-        NSMutableArray *array = [NSMutableArray arrayWithArray:[userDefaults objectForKey:[NSString stringWithFormat:@"imagePath%d",j]]];
-        NSMutableArray *imageArray = [[NSMutableArray alloc]init];
-        for(int i=0;i<array.count;i++){
+        for(int j=0;j<5;j++){
+            
+            NSMutableArray *array = [NSMutableArray arrayWithArray:[userDefaults objectForKey:[NSString stringWithFormat:@"imagePath%d",j]]];
+            NSMutableArray *imageArray = [[NSMutableArray alloc]init];
+            for(int i=0;i<array.count;i++){
                 
-            UIImage *image = [UIImage imageWithData:[array objectAtIndex:i]];
-            [imageArray addObject:image];
+                UIImage *image = [UIImage imageWithData:[array objectAtIndex:i]];
+                [imageArray addObject:image];
+                
+            }
+            [self.stickers addObject:imageArray];
             
         }
-        [self.stickers addObject:imageArray];
-
+        
+        self.imagesArray = [self.stickers objectAtIndex:0];
+        
+    }else{
+        
+        UIImage *image = [UIImage imageNamed:@"placeholder.png"];
+        [self.imagesArray addObject:image];
+        _downloadStringwithEquiment = [[UILabel alloc]initWithFrame:CGRectMake(self.view.frame.size.width * 0.25, self.view.frame.size.height * 0.1, self.view.frame.size.width * 0.5, 20)];
+        _downloadStringwithEquiment.text = @"Downloading images...";
+        _downloadStringwithEquiment.textColor = [UIColor blackColor];
+        
+        self.tempLabel = _downloadStringwithEquiment;
+        [self.view addSubview:_downloadStringwithEquiment];
+        
     }
     
-    self.imagesArray = [self.stickers objectAtIndex:0];
     self.sticker_selectedImages = [[NSMutableArray alloc]initWithObjects:@"equiment2.png",@"sticker2_selected.png",@"marcle2.png",@"sticker4_selected.png",@"sticker5_selected.png", nil];
     
     self.color = self.equiment_view.backgroundColor;
@@ -166,11 +198,87 @@
     
 }
 
+-(void)initwithfiles{
+    
+    NSUserDefaults *userDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.bodytech.gymoji"];
+    if([userDefaults objectForKey:@"imagePath0"]!=nil){
+        
+        self.imagesArray = [[NSMutableArray alloc]init];
+        self.stickers = [[NSMutableArray alloc]init];
+        for(int j=0;j<5;j++){
+            
+            NSMutableArray *array = [NSMutableArray arrayWithArray:[userDefaults objectForKey:[NSString stringWithFormat:@"imagePath%d",j]]];
+            NSMutableArray *imageArray = [[NSMutableArray alloc]init];
+            for(int i=0;i<array.count;i++){
+                
+                UIImage *image = [UIImage imageWithData:[array objectAtIndex:i]];
+                [imageArray addObject:image];
+                
+            }
+            [self.stickers addObject:imageArray];
+            
+        }
+        
+        self.imagesArray = [self.stickers objectAtIndex:0];
+        
+    }
+    
+}
+
 -(void)viewWillAppear:(BOOL)animated{
     
-    
-    [self.collectionView reloadData];
+    NSUserDefaults *userDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.bodytech.gymoji"];
+    if([userDefaults objectForKey:@"imagePath4"]!=nil){
+        
+        [_downloadStringwithEquiment removeFromSuperview];
+        self.tempLabel = [[UILabel alloc]init];
+        [self.collectionView reloadData];
+        
+    }
+//    if([userDefaults objectForKey:@"imagePath1"]!=nil){
+//        
+//        [_downloadStringwithworkouts removeFromSuperview];
+//        self.tempLabel = [[UILabel alloc]init];
+//        [self.collectionView reloadData];
+//        
+//    }
+//    if([userDefaults objectForKey:@"imagePath2"]!=nil){
+//        
+//        [_downloadStringwithmuscles removeFromSuperview];
+//        self.tempLabel = [[UILabel alloc]init];
+//        [self.collectionView reloadData];
+//        
+//    }
+//    if([userDefaults objectForKey:@"imagePath3"]!=nil){
+//        
+//        [_downloadStringwithbodybuilding removeFromSuperview];
+//        self.tempLabel = [[UILabel alloc]init];
+//        [self.collectionView reloadData];
+//        
+//    }
+//    if([userDefaults objectForKey:@"imagePath4"]!=nil){
+//        
+//        [_downloadStringwithgymselfie removeFromSuperview];
+//        self.tempLabel = [[UILabel alloc]init];
+//        [self.collectionView reloadData];
+//        
+//    }
+
     self.pageControll.numberOfPages = 0;
+    self.pageControll.currentPage = 0;
+}
+
+-(void)targetMethod:(NSTimer*)timer{
+    
+    [self initwithfiles];
+    NSUserDefaults *userDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.bodytech.gymoji"];
+    if([userDefaults objectForKey:@"imagePath4"]!=nil){
+        [timer invalidate];
+        [self viewWillAppear:true];
+    }
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -240,11 +348,12 @@
     float index = section * 2 + row;
     
     GymojiCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
+    if(self.imagesArray !=NULL){
+        
+        cell.imgGymoji.image = [self.imagesArray objectAtIndex:index];
+    }
     
-    cell.imgGymoji.image = [self.imagesArray objectAtIndex:index];
-//    UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(gymojiButtonPressed:)];
-//    [cell.imgGymoji setUserInteractionEnabled: YES] ;
-//    [cell.imgGymoji addGestureRecognizer:tapRecognizer];
+    
     int pages = ceil(self.collectionView.contentSize.width /
                      self.collectionView.frame.size.width);
     
@@ -259,14 +368,45 @@
     [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:(void (^)(void)) ^{cell.imgGymoji.transform=CGAffineTransformMakeScale(1.2, 1.2);} completion:^(BOOL finished){
         cell.imgGymoji.transform = CGAffineTransformIdentity;
     }];
-    //copy image to clipboard
-    //UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
-    //pasteboard.image = [self resizeImage:cell.imgGymoji.image];
+    
+    
     UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
-    //NSString *newPathName = [[NSBundle mainBundle]pathForResource:@"gymoji_2" ofType:@"png"];
+
     NSData *data = UIImagePNGRepresentation(cell.imgGymoji.image);
-//    NSData *data = [NSData dataWithContentsOfFile:newPathName];
+
     [pasteboard setData:data forPasteboardType:@"public.png"];
+    
+    if(pasteboard){
+        
+        //copy image to clipboard
+        UIView *notificationView= [[UIView alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height * 0.1, self.view.frame.size.width, 20)];
+        notificationView.backgroundColor = [UIColor greenColor];
+        UILabel *notification = [[UILabel alloc]initWithFrame: CGRectMake(0, 0, notificationView.frame.size.width, notificationView.frame.size.height)];
+        notification.text = @"Gymoji copied to clipboard!";
+        notification.textColor = [UIColor whiteColor];
+        notification.textAlignment = NSTextAlignmentCenter;
+        [notificationView addSubview:notification];
+        
+        [notificationView setAlpha:0.0f];
+        
+        //fade in
+        [UIView animateWithDuration:1.0f animations:^{
+            
+            [notificationView setAlpha:1.0f];
+            
+        } completion:^(BOOL finished) {
+            
+            //fade out
+            [UIView animateWithDuration:0.5f animations:^{
+                
+                [notificationView setAlpha:0.0f];
+                
+            } completion:nil];
+            
+        }];
+        
+        [self.view addSubview:notificationView];
+    }
     
 
 }
@@ -277,8 +417,20 @@
 }
 
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    
     CGFloat pagewidth = self.collectionView.frame.size.width;
+    float currentPage = self.collectionView.contentOffset.x / pagewidth;
+    
     self.pageControll.currentPage = self.collectionView.contentOffset.x/pagewidth;
+    if (0.0f != fmodf(currentPage, 1.0f))
+    {
+        self.pageControll.currentPage = currentPage + 1;
+    }
+    else
+    {
+        self.pageControll.currentPage = currentPage;
+    }
+
 }
 
 #pragma mark -
@@ -356,6 +508,16 @@
     
     self.viewtemp = view.tag;
     self.temp = view.tag - 5;
+    self.imagesArray = [[NSMutableArray alloc]init];
+    
+    NSUserDefaults *userDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.bodytech.gymoji"];
+    if([userDefaults objectForKey:[NSString stringWithFormat:@"imagePath%d",view.tag-6]]!=nil){
+        
+        self.imagesArray = [self.stickers objectAtIndex:view.tag - 6];
+    }
+    
+    [self viewWillAppear:YES];
+    
 }
 
 - (IBAction)categorybuttonsPresssed:(UIButton *)sender {
@@ -384,10 +546,73 @@
     self.viewtemp = sender.tag + 5;
     
     self.imagesArray = [[NSMutableArray alloc]init];
-    if([self.stickers objectAtIndex:sender.tag -1] !=NULL){
+//    if([self.stickers objectAtIndex:sender.tag -1] !=NULL){
+//        self.imagesArray = [self.stickers objectAtIndex:sender.tag - 1];
+//    }
+    NSUserDefaults *userDefaults = [[NSUserDefaults alloc] initWithSuiteName:@"group.bodytech.gymoji"];
+    if([userDefaults objectForKey:[NSString stringWithFormat:@"imagePath%d",sender.tag-1]]!=nil){
+        
         self.imagesArray = [self.stickers objectAtIndex:sender.tag - 1];
+//    }else{
+//
+//        switch (sender.tag-1) {
+//            case 1:
+//            {
+//                if(self.tempLabel.text.length==0){
+//                    
+//                    _downloadStringwithworkouts = [[UILabel alloc]initWithFrame:CGRectMake(self.view.frame.size.width * 0.25, self.view.frame.size.height * 0.1, self.view.frame.size.width * 0.5, 20)];
+//                    _downloadStringwithworkouts.text = @"Downloading images...";
+//                    _downloadStringwithworkouts.textColor = [UIColor blackColor];
+//                    
+//                    [self.view addSubview:_downloadStringwithworkouts];
+//                }
+//                
+//            }
+//                break;
+//            case 2:
+//            {
+//                if(self.tempLabel.text.length == 0){
+//                    
+//                    _downloadStringwithmuscles = [[UILabel alloc]initWithFrame:CGRectMake(self.view.frame.size.width * 0.25, self.view.frame.size.height * 0.1, self.view.frame.size.width * 0.5, 20)];
+//                    _downloadStringwithmuscles.text = @"Downloading images...";
+//                    _downloadStringwithmuscles.textColor = [UIColor blackColor];
+//                    
+//                    [self.view addSubview:_downloadStringwithmuscles];
+//                }
+//                
+//            }
+//                break;
+//            case 3:
+//            {
+//                if(self.tempLabel.text.length == 0){
+//                    
+//                    _downloadStringwithbodybuilding = [[UILabel alloc]initWithFrame:CGRectMake(self.view.frame.size.width * 0.25, self.view.frame.size.height * 0.1, self.view.frame.size.width * 0.5, 20)];
+//                    _downloadStringwithbodybuilding.text = @"Downloading images...";
+//                    _downloadStringwithbodybuilding.textColor = [UIColor blackColor];
+//                    
+//                    [self.view addSubview:_downloadStringwithbodybuilding];
+//                }
+//                
+//            }
+//                break;
+//            case 4:
+//            {
+//                if(self.tempLabel.text.length == 0){
+//                    
+//                    _downloadStringwithgymselfie = [[UILabel alloc]initWithFrame:CGRectMake(self.view.frame.size.width * 0.25, self.view.frame.size.height * 0.1, self.view.frame.size.width * 0.5, 20)];
+//                    _downloadStringwithgymselfie.text = @"Downloading images...";
+//                    _downloadStringwithgymselfie.textColor = [UIColor blackColor];
+//                    
+//                    [self.view addSubview:_downloadStringwithgymselfie];
+//                }
+//                
+//            }
+//                break;
+//                
+//            default:
+//                break;
+//        }
     }
-    
     [self viewWillAppear:YES];
     
    }
